@@ -1,0 +1,52 @@
+<div class="head">
+    <header>
+    
+    
+    <div class="user" >
+        <div class="user-info time">
+            <span style="color: green;">Welcome! <%= currentUser ? currentUser.username : 'Guest' %></span><br>
+            <span style="color: darkgoldenrod;">Branch Name :- Head Office</span><br>
+            
+            <span> <%= formattedDate %></span>
+            
+        </div>
+        <div class="user-logo">
+            <img src="/user.jpeg" class="logo1" >
+        </div>
+        
+    
+    </div>
+    <h5 class="main-title">Bank Name</h5>
+    </header>
+    </div>
+    <div class="imp-navbar navbar navbar-expand-lg md-3 ">
+    <nav>
+        <ul>
+            <li><a href="http://localhost:8080/Home?username=<%= username %>">Home</a></li>
+                <div class="dropdown">
+                    <li class ="dropbtn">Master</li>
+                     <div class="dropdown-content">
+                     <a href="http://localhost:8080/Home/castMaster"> cast </a>
+                     <a href="http://localhost:8080/Home/employeeInfo"> Pay section master </a>
+                    <a href="http://localhost:8080/Home/gradMaster"> Grade master </a>
+                    <a href="http://localhost:8080/Home/sectMaster"> Section </a>
+                    <a href="http://localhost:8080/Home/branchMaster"> Branch </a>
+                     <a href=""> Allowance </a>
+                    <a href=" "> Allowance Footer </a>
+                    <a href=" "> Deduction </a>
+                     <a href=""> Deduction Footer </a>
+                    <a href=""> Leave </a>
+                    <a href=""> Leave Reason Master </a>
+                    <a href=""> Leave Issue </a>
+                    <a href=""> D.A.Index</a>
+                    <a href=""> Working Year </a>
+                    <a href=""> System Parameter Master </a>
+                    </div>
+                    </div>
+            <li><a href="#Daily Working">Daily Working</a></li>
+            <li><a href="#Registers">Registers</a></li>
+            <li><a href="#House">House Keeping</a></li>
+            <li><a href="http://localhost:8080/login">Logout</a></li>
+        </ul>
+    </nav>
+</div>
